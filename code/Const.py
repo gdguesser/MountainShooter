@@ -154,3 +154,49 @@ SCORE_POS = {'Title': (WIN_WIDTH / 2, 50),
              8: (WIN_WIDTH / 2, 270),
              9: (WIN_WIDTH / 2, 290),
              }
+
+ENTITY_SPEED.update({
+    'Level3Bg0': 0,
+    'Level3Bg1': 1,
+    'Level3Bg2': 2,
+    'Level3Bg3': 3,
+    'Level3Bg4': 4,
+    'Enemy3': 2,  # Velocidade base do Enemy3
+    'Enemy3Shot': 3,
+})
+
+ENTITY_HEALTH.update({
+    'Level3Bg0': 999,
+    'Level3Bg1': 999,
+    'Level3Bg2': 999,
+    'Level3Bg3': 999,
+    'Level3Bg4': 999,
+    'Enemy3': 80,  # Mais resistente que Enemy1 e Enemy2
+    'Enemy3Shot': 1,
+})
+
+ENTITY_DAMAGE.update({
+    'Level3Bg0': 0,
+    'Level3Bg1': 0,
+    'Level3Bg2': 0,
+    'Level3Bg3': 0,
+    'Level3Bg4': 0,
+    'Enemy3': 1,
+    'Enemy3Shot': 25,  # Tiro mais forte que os outros inimigos
+})
+
+ENTITY_SCORE.update({
+    'Level3Bg0': 0,
+    'Level3Bg1': 0,
+    'Level3Bg2': 0,
+    'Level3Bg3': 0,
+    'Level3Bg4': 0,
+    'Enemy3': 150,  # Mais pontos que Enemy1 e Enemy2
+    'Enemy3Shot': 0,
+})
+
+ENTITY_SHOT_DELAY.update({
+    'Enemy3': 150,  # Delay entre tiros do Enemy3
+})
+
+TIMEOUT_LEVEL_3 = 40000  # 40s (dobro do tempo padrão)
